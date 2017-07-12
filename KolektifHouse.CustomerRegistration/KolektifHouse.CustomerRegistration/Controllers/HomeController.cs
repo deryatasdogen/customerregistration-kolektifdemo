@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KolektifHouse.DAL.Base;
+using KolektifHouse.DAL.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,7 @@ namespace KolektifHouse.CustomerRegistration.Controllers
 {
     public class HomeController : Controller
     {
+        private KolektifContext db = new KolektifContext();
         public ActionResult Index()
         {
             return View();
@@ -26,5 +29,6 @@ namespace KolektifHouse.CustomerRegistration.Controllers
 
             return View();
         }
+
     }
 }
