@@ -26,7 +26,6 @@ namespace KolektifHouse.CustomerRegistration.Controllers.api
                 blogpost.UploadDate = BlogPost.UploadDate;
                 blogpost.Header = BlogPost.Header;
                 blogpost.Text = BlogPost.Text;
-                blogpost.Picture = BlogPost.Picture;
                 KolektifContext.SaveChanges();
             }
             return BlogPost;
