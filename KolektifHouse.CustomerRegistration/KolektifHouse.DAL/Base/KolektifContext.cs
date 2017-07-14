@@ -16,10 +16,12 @@ namespace KolektifHouse.DAL.Base
         }
 
         public DbSet<Member> Members { get; set; }
+        public DbSet<BlogPost> BlogPosts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
+
 }

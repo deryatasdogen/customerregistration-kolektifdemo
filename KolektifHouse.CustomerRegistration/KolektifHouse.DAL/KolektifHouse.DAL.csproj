@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Base\KolektifContext.cs" />
     <Compile Include="Base\KolektifInitializer.cs" />
+    <Compile Include="Entity\BlogPost.cs" />
     <Compile Include="Entity\Member.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
